@@ -56,6 +56,10 @@
   right: 0;
   top: 10px;
 }
+.log {
+  position: absolute;
+  right: 150px;
+}
 .bars {
   position: absolute;
   right: 0;
@@ -73,15 +77,11 @@
 }
 .container h1 {
   font-size: 60px;
-  width: 75%;
 }
 .container p {
   width: 75%;
   font-size: 20px;
   line-height: 30px;
-}
-.home video {
-  width: 550px;
 }
 .button2 {
   background-color: rgb(24, 141, 24);
@@ -126,10 +126,9 @@
 .platforms {
   background-color: rgb(243, 246, 249);
   margin-top: 100px;
-  height: 500px;
 }
 .platform h2 {
-  width: 47%;
+  width: 60%;
   padding: 100px;
   padding-bottom: 10px;
 }
@@ -145,17 +144,18 @@
   margin-top: 15px;
 }
 .platform-item {
-  width: 25%;
+  padding: 10px;
 }
 .platform-item a {
   color: green;
   text-decoration-line: underline;
 }
-
+.make {
+  margin: 0 50px;
+}
 .make-item {
-  margin: 0 auto;
+  margin: 0 100px;
   text-align: center;
-  width: 800px;
 }
 
 .make h1 {
@@ -177,16 +177,14 @@
   margin-bottom: 100px;
 }
 .data {
-  font-size: 12px;
   color: rgb(38, 197, 38);
   background-color: rgb(243, 246, 249);
   border-radius: 7px;
   font-weight: bold;
   padding: 5px;
   margin-top: 40px;
-  margin-left: 380px;
-  font-size: 14px;
-  width: 70px;
+  margin-left: 50%;
+  width: fit-content;
 }
 
 .footer {
@@ -200,8 +198,8 @@
 }
 
 .footer-items {
-  width: 85%;
   margin: 0 70px;
+  width: 75%;
 }
 
 .footer-item {
@@ -211,21 +209,20 @@
 }
 
 .footer-item li {
-  list-style: none;
-}
-
-.footer-item li {
   color: white;
-  padding: 10px 0;
+  padding: 10px 10px;
+  list-style: none;
 }
 
 .footer-item a {
   color: white;
 }
-
 .email {
   margin-top: 100px;
   margin-left: 50px;
+}
+.email p {
+  color: rgb(112, 115, 124);
 }
 
 .email input {
@@ -263,12 +260,13 @@
   .home video {
     width: 50%;
   }
-  .make h1 {
-    margin: 100px;
-  }
+
   .footer-class {
     display: flex;
     flex-wrap: wrap;
+  }
+  .email {
+    margin-top: 0;
   }
 }
 
@@ -276,8 +274,15 @@
   .head {
     display: none;
   }
+  .home h1 {
+    margin-bottom: 15px;
+    margin-top: -50px;
+  }
   .head2 {
     display: block;
+  }
+  .button2 {
+    margin-bottom: 30px;
   }
   .home {
     flex-wrap: wrap;
@@ -321,5 +326,11 @@
   .footer-class {
     display: flex;
     flex-wrap: wrap;
+  }
+  .email {
+    margin-top: 0;
+  }
+  .make-item {
+    margin: 0;
   }
 }
